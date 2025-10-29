@@ -1,0 +1,1123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: LeMaro;
+    src: url(./fonts/LeMaro.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "ROBOTO";
+    src: url(./fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+header {
+  width: 100%; 
+  background-image: url(images/planetes/Footer_background.png);
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #333;
+}
+
+.logo img {
+  width: 268px;
+  height: auto;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  padding: 6px 10px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  outline: none;
+  width: 180px;
+}
+
+.search-bar button {
+  background: #ffffff;
+  border: none;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 16px;
+  height: 16px;
+}
+
+.language {
+  background: #00000058;
+  color: rgb(255, 255, 255);
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notif {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 30px;
+  background-color: #ffffff;
+}
+
+.bottom-left {
+  flex: 0 0 auto; 
+}
+
+.bottom-right {
+  flex: 0 0 auto; 
+  color: #fff;
+}
+
+.contact-btn{
+    background-color: black;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.navbar {
+  flex: 1 1 auto; 
+  display: flex;
+  justify-content: space-around; 
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+
+a{
+    color:#808080 ;
+    text-decoration: none;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /*overflow: hidden;*/
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 481px;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+}
+
+.slider h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+  font-family: "Roboto", sans-serif;
+}
+
+.slider p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-family: "LeMaro", sans-serif;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.explore-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+
+/* section of missions*/
+
+.missions {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+  color: #fff;
+}
+
+
+.missions-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.mission-card {
+  width: 638px;
+  height: 550px;
+  background: #1f2833;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+.mission-card img {
+  width: 100%;         
+  height: 90%;       
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-text {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card-text p {
+  margin: 10px 0 5px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+
+
+/* section of missions*/
+
+
+.carts-planets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #fafafa;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-width: 1159px;
+  height: 609px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 40px;
+  font-family: "Times New Roman", serif;
+}
+
+
+.planet-name {
+  color: rgb(0, 0, 0);
+  margin: 0 0 18px 0;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.info {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 26px;
+}
+
+.item {
+  color: black;
+  display: block;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  width: fit-content;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  color: black;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 520px;
+  color: #111;
+}
+
+.right img {
+  width: 510px;
+  height: 521px;
+  border-radius: 18px;
+}
+
+
+/* section contact*/
+
+
+.contact{
+  height: 282px ;
+  width: 1152px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.box img{
+  margin-bottom: 20px;
+}
+
+.box h2{
+  font-size: 36px;
+  color: black;
+  font-family: Poppins;
+  margin-bottom: 20px;
+}
+
+.box p{
+  font-size: 16px;
+  color: #1111119a;
+  font-family: Poppins ;
+  margin-bottom: 30px;
+}
+
+.box  a{
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  text-decoration: underline;
+}
+
+
+/* footer */
+
+
+footer {
+  width: 100%;
+  background-image: url("images/about/footer_background.png");
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  font-family: Arial, sans-serif;
+}
+
+.background-footer {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.9); 
+  padding: 40px;
+}
+
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 25px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-logo p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/*Home*/
+
+.carts-3{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart{
+  width: 329.14px;
+  height: 282px;
+  border-radius: 24px;
+  background-image: url(images/about/hooome-card.png);
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-cart{
+  align-self: self-end;
+  margin-right: 20px;
+  /*margin-top: 70px;*/
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  color: #111;
+}
+
+
+.card img{
+  display: block;
+  width: 100%;
+}
+
+.cart-titer{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mini-para{
+
+  /*margin-top: 60px;*/
+  margin-left: 25px;
+  margin-right: 10px;
+  color: white;
+  font-size: 14px;
+
+}
+
+.cart-text{
+
+  height: 300px;
+  width: 100%;
+  background-color : rgb(254, 253, 255);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-text{
+  height: 140px;
+  width: 674px;
+  background-color: rgb(255, 255, 255);
+  color: #171E27;
+  font-size : 18px;
+  font-family:  'Lucida Sans Regular','Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px 10px 10px 10px;
+  text-align: left;
+}
+
+.top-left-card{
+  width: 211.29px;
+  height: 40px;
+  margin-bottom: 25px;
+}
+
+.left-card{
+  height: 130px;
+  width: 414px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.top-left-card{
+  display: flex;
+  align-items: center;
+}
+
+.top-left-card img{
+  margin-right: 20px;
+}
+
+#time{
+  letter-spacing: 5px;
+}
+
+
+/* astronomy-explain - card number three*/
+
+
+.astronomy-explain{
+  height: 421px;
+  width: 1151px;
+  background-color: #000000;
+  border-radius: 37px;
+  margin: auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-image{
+  height: 416px;
+  width: 560px;
+  background-image: url(images/home/Astro\ Kit\ —\ NASA\ Dashboard\ 1.png);
+  margin-left: 0px;
+  border-radius: 33px 0px 0px 33px;
+}
+
+.right-Question{
+  height: 377px;
+  width: 483px;
+  background: linear-gradient(to bottom ,#1f1e1e58 ,#6f7275) ;
+  border-radius: 33px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Lucida Sans Regular' ,'Lucida Sans',  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cart-question{
+  color: rgb(255, 255, 255);
+  font-style: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+#learn-more{
+  align-self: self-end;
+  margin-right: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+/*-------------------*/
+
+
+.image-section {
+    width: 1153px;
+    height: 609px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.text-box {
+    text-align: left;
+    width: 90%;
+}
+
+.text-box h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.text-box h2 {
+    font-size: 36px;
+    color: #000000;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.text-box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 60px;
+}
+
+.credit {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 95px;
+}
+
+.read{
+  margin-top: 95px;
+  font-size: 16px;
+}
+
+
+
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+
+.image-box img {
+    width: 521px;
+    height: 510px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.read {
+    padding: 10px 18px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.View {
+    padding: 10px 18px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    font-size: 20px;
+    font-style: bold;
+}
+
+
+/* just space*/
+
+.just-space{
+  height: 500px;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+/* our Vision and our Mission*/
+
+.vision-mission {
+  width: 1200px;
+  height: 258.63px;
+  background-image: url(images/home/our2.png);
+  border-radius: 33px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.vision, .mission {
+  width: 347.47px;
+  height: 203.53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.vision h2, .mission h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.vision p, .mission p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+/*Our-Community*/
+.Our-Community{
+  height: 500px;
+  width: auto ;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Title-our{
+
+  width: auto;
+  height: 52px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.image-name{
+  width: 1296.75px;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Title-our{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.img-name{
+  font-style: oblique;
+}
+
+.Title-our p{
+  color: black;
+  font-size: 36px;
+}
+
+
+/*groow*/
+
+.grow {
+    width: 1152px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.grow h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.all-itm {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box {
+    width: 22%;
+}
+
+.box icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.box h2 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #000;
+}
+
+.box p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/*community */
+
+
+.community {
+    width: 100%;
+    height: 263px;
+    background-image: url("images/home/Astronomy-Communities.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.text-boxx {
+    width: 40%;
+}
+
+.text-boxx h1 {
+    font-size: 36px;
+    color: white;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 0 0 15px 0;
+}
+
+.text-boxx p {
+    font-size: 15px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.info-boxx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 260px;
+    height: 180px;
+}
+
+.info {
+    width: 48%;
+}
+
+.label {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 3px;
+}
+
+.number {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.a-litter-space{
+  height: 30px;
+}
+
+
+/* contact page---------------------------------------------------------------------*/
+
+/* START CONTACT */
+.contact-top-part {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-top-container {
+  width: 1000px;
+  display: flex;
+  height: 500px;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+.contact-top-left-part {
+  width: 500px;
+  background: url(images/contact/contact-img.png) center/cover;
+  background-size: 900px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.top-part-top,
+.top-part-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-part-middle {
+  margin-bottom: 60px;
+}
+
+.top-part-top h1 {
+  font-weight: 600;
+}
+
+.top-part-top p {
+  font-weight: 200;
+}
+
+.top-part-middle .phone,
+.top-part-middle .folder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-part-middle .phone span,
+.top-part-middle .folder span {
+  font-weight: 200;
+}
+
+.top-part-bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-top-right-part {
+  width: 500px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.contact-top-right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-top-right-part .top-inputs,
+.contact-top-right-part .middle-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-top-right-part label {
+  font-size: 14px;
+}
+
+.contact-top-right-part input {
+  width: 210px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+}
+
+.contact-top-right-part .subject {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-top-right-part .subject .options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-top-right-part .subject .options input {
+  width: 10px;
+}
+
+.contact-top-right-part .subject .options span {
+  font-size: 10px;
+}
+
+.contact-top-right-part .subject label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-top-right-part .message {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-top-right-part .message textarea {
+  border: none;
+  border-bottom: 1px solid #819196;
+  padding-bottom: 20px;
+}
+
+.contact-top-right-part .message textarea::placeholder {
+  font-size: 12px;
+  color: black;
+}
+
+.contact-top-right-part a {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-left: 320px;
+  font-size: 12px;
+}
+/* END CONTACT */
+/* ---------------------------------------------------------- */
+
+
+/*contacct su*/
+
+
+.Message-envoye{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    max-width: 1200px;
+    margin: 260px auto;
+    padding: 20px 60px ;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.A1{ 
+    margin: 50px ;
+    background-color: #000;
+    border-radius: 15px;
+    color: white;
+}
+.A2{
+    background-color: #ffffff;
+    border: #000 solid 1px;
+    border-radius: 20px;
+    color: black; 
+    display: inline-block;
+
+}
+.A2 button{
+    padding: 20px;
+}
+.A1 h1{ 
+    text-align: center ;
+    padding: 20px ;
+}
+.A2 h2{
+    text-align: center ;
+}
+
+.search-bar{
+  height: 40px;
+}
