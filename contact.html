@@ -108,123 +108,79 @@
       </div>
       <div class="contact-description-content">
         <div class="content-form">
-          <form action="POST">
-            <div class="form-container">
-              <div class="form-container-left">
-                <div class="container-input">
-                  <label for="first-name">First Name :</label>
-                  <input type="text" id="first-name" class="input" />
-                </div>
-                <br /><br />
-                <div class="container-input">
-                  <label for="first-name">Email :</label>
-                  <input type="email" id="first-name" class="input" />
-                </div>
-              </div>
-              <div class="form-container-right">
-                <div class="container-input">
-                  <label for="first-name">Last Name :</label>
-                  <input type="text" id="first-name" class="input" />
-                </div>
-                <br /><br />
-                <div class="container-input">
-                  <label for="first-name">Phone Number :</label>
-                  <input type="tel" id="first-name" class="input" />
-                </div>
-              </div>
-              <div class="form-container-bottom">
-                <div class="container-radio">
-                  <div class="container-radio-title">
-                    <label for="first-name">Select Subject?</label>
-                  </div>
-                  <div class="radio-btn">
-                    <div>
-                      <input
-                        type="radio"
-                        name="Select-Subject"
-                        class="radio"
-                      /><label for="Select-Subject">General Inquiry</label>
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        name="Select-Subject"
-                        class="radio"
-                      /><label for="Select-Subject">General Inquiry</label>
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        name="Select-Subject"
-                        class="radio"
-                      /><label for="Select-Subject">General Inquiry</label>
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        name="Select-Subject"
-                        class="radio"
-                      /><label for="Select-Subject">General Inquiry</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="container-input">
-                  <label for="first-name">Message :</label>
-                  <p>Write your message..</p>
-                  <input type="text" id="first-name" class="input" />
-                </div>
-              </div>
-              <div class="container-botton">
-                <input type="submit" value="Send Message" />
-              </div>
-            </div>
-          </form>
+          <form id="contact-form" action="POST">
+  <div class="form-container">
+    <div class="form-container-left">
+
+      <div class="container-input">
+        <label for="first-name">First Name :</label>
+        <input type="text" id="first-name" class="input" />
+        <div id="error-name" style="color: red; margin-bottom: 10px;"></div>
+      </div>
+
+      <br /><br />
+
+      <div class="container-input">
+        <label >Email :</label>
+        <input type="email" id="email" class="input" />
+        <div id="errorEmail" style="color: red; margin-bottom: 10px;"></div>
+      </div>
+
+    </div>
+
+    <div class="form-container-right">
+
+      <div class="container-input">
+        <label for="last-name">Last Name :</label>
+        <input type="text" id="last-name" class="input" />
+        <div id="errorLastName" style="color: red; margin-bottom: 10px;"></div>
+      </div>
+
+      <br /><br />
+
+      <div class="container-input">
+        <label for="phone">Phone Number :</label>
+        <input type="tel" id="phone" class="input" />
+        <div id="errorPhone" style="color: red; margin-bottom: 10px;"></div>
+      </div>
+
+    </div>
+
+    <div class="form-container-bottom">
+      <div class="container-radio">
+        <div class="container-radio-title">
+          <label>Select Subject?</label>
         </div>
+        <div class="radio-btn">
+          <div>
+            <input type="radio" name="subject" id="general" class="radio" value="general" />
+            <label for="general">General Inquiry</label>
+          </div>
+          <div>
+            <input type="radio" name="subject" id="support" class="radio" value="support" />
+            <label for="support">Support</label>
+          </div>
+          <div>
+            <input type="radio" name="subject" id="feedback" class="radio" value="feedback" />
+            <label for="feedback">Feedback</label>
+          </div>
+        </div>
+
+        <div id="error-subject" style="color:red; margin-top:5px;"></div>
+      </div>
+
+      <div class="container-input">
+        <label for="message">Message :</label>
+        <input type="text" id="message" class="input" placeholder="Write your message.." />
       </div>
     </div>
-    <div class="contact-cards">
-      <div class="contact-cards-list">
-        <div class="contact-img">
-          <img src="images/contact/email_2099199 1.png" alt="contact-1" />
-        </div>
-        <div class="contact-text">
-          <p>Email</p>
-        </div>
-        <div class="contact-des">
-          <p>
-            For any inquiries or assistance, feel free to contact us via email.
-            We are here to help with your questions.
-          </p>
-        </div>
-      </div>
-      <div class="contact-cards-list">
-        <div class="contact-img">
-          <img src="images/contact/chat_10547720 1.png" alt="contact-1" />
-        </div>
-        <div class="contact-text">
-          <p>Live Chat</p>
-        </div>
-        <div class="contact-des">
-          <p>
-            Connect with us through live chat for instant support and answers to
-            your questions. We're here to help you!
-          </p>
-          <a href="#">Click Here ></a>
-        </div>
-      </div>
-      <div class="contact-cards-list">
-        <div class="contact-img">
-          <img src="images/contact/phone-call_455705 1.png" alt="contact-1" />
-        </div>
-        <div class="contact-text">
-          <p>Phone</p>
-        </div>
-        <div class="contact-des">
-          <p>
-            Take the next step in your career with opportunities for
-            development, mentorship, and professional networking.
-          </p>
-          <a href="#">+94112224556</a>
+
+    <div class="container-botton">
+      <input type="submit" value="Send Message"/>
+    </div>
+  </div>
+</form>
+
         </div>
       </div>
     </div>
@@ -323,5 +279,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

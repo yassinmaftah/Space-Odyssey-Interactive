@@ -1008,6 +1008,10 @@ hr {
 .form-container-left ,.form-container-right{
     grid-area: span 1;
 }
+
+.form-container-right{
+  padding-top: 9px;
+}
 .form-container-bottom{
     grid-column: span 2;
     display: grid;
