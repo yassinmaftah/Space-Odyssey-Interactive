@@ -14,6 +14,8 @@ form.addEventListener('submit', function(e) {
  const errorLastName = document.getElementById('errorLastName');
  const errorEmail = document.getElementById('errorEmail');
  const errorPhone = document.getElementById('errorPhone');
+ const errorSubject = document.getElementById('errorSubject');
+ const errorMessage = document.getElementById('errorMessage');
 
 
  let hasError = false;
@@ -21,14 +23,22 @@ form.addEventListener('submit', function(e) {
    errorLastName.textContent = '';
    errorEmail.textContent = '';
    errorPhone.textContent = '';
+   errorSubject.textContent = '';
+   errorMessage.textContent = '';
 
-  if (firstName === '' || firstName.length < 3) {
+  if (firstName === '') {
     errorName.textContent = 'First name is required';
+    hasError = true;
+  }else if (firstName.length < 3) {
+    errorName.textContent = 'The name must be longer than 2 letters.';
     hasError = true;
   }
 
-  if (lastName === '' || lastName < 3) {
+  if (lastName === '') {
     errorLastName.textContent = 'Last Name is required';
+    hasError = true;
+  }else if (lastName.length < 3) {
+    errorLastName.textContent = 'The Last name must be longer than 2 letters.';
     hasError = true;
   }
 
@@ -49,12 +59,12 @@ form.addEventListener('submit', function(e) {
   }
 
   if (!subject) {
-    errorName.textContent = 'Select a subject';
+    errorSubject.textContent = 'select an subject!!';
     hasError = true;
   }
 
   if (message === '') {
-    errorName.textContent = 'Message is required';
+    errorMessage.textContent = 'message is empty';
     hasError = true;
   }
 
