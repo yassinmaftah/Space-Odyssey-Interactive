@@ -4,7 +4,7 @@
     "name": "Apollo 11",
     "agency": "NASA",
     "objective": "Premier alunissage habité",
-    "launchDate": "1969-07-16",
+    "launchDate": "1969",
     "image": "images/Missions/appolo11.png"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Voyager 1",
     "agency": "NASA",
     "objective": "Exploration du système solaire externe",
-    "launchDate": "1977-09-05",
+    "launchDate": "1977",
     "image": "images/Missions/voyage1.png"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Rosetta",
     "agency": "ESA",
     "objective": "Étude de la comète 67P/Churyumov-Gerasimenko",
-    "launchDate": "2004-03-02",
+    "launchDate": "2004",
     "image": "images/Missions/rosetta.png"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Curiosity",
     "agency": "NASA",
     "objective": "Exploration du cratère Gale sur Mars",
-    "launchDate": "2011-11-26",
+    "launchDate": "2011",
     "image": "images/Missions/curiosity.png"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Artemis I",
     "agency": "NASA",
     "objective": "Test du système de lancement SLS et d’Orion",
-    "launchDate": "2022-11-16",
+    "launchDate": "2022",
     "image": "images/Missions/artemis1.png"
   },
   {
@@ -44,7 +44,7 @@
     "name": "James Webb Space Telescope",
     "agency": "NASA/ESA/CSA",
     "objective": "Observation de l’univers primitif",
-    "launchDate": "2021-12-25",
+    "launchDate": "2021",
     "image": "images/Missions/james_weeb_telescope.png"
   },
   {
@@ -52,7 +52,7 @@
     "name": "BepiColombo",
     "agency": "ESA/JAXA",
     "objective": "Exploration de la planète Mercure",
-    "launchDate": "2018-10-20",
+    "launchDate": "2018",
     "image": "images/Missions/BepiColombo.jpg"
   }
 ]
