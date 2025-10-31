@@ -21,8 +21,10 @@ function displayMissions(missions) {
       <div class="card-text">
         <h3 class="mission-name">${mission.name}</h3>
         <p class="mission-agency">${mission.agency}</p>
-        <p class="mission-year">${mission.launchDate.split('-')[0]}</p>
+        <p class="mission-year">${mission.launchDate}</p>
         <p class="mission-desc">${mission.objective}</p>
+        <button class="btnfavoret" type="button"><i class="material-icons">favorite</i></button>
+        
       </div>
     `;
 
