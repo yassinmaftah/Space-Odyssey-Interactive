@@ -1,3 +1,8 @@
+
+/*form validation*/
+
+console.log("JS loaded!");
+
 const form = document.getElementById('contact-form');
 const errorElement = document.getElementById('error');
 
@@ -71,3 +76,5 @@ form.addEventListener('submit', function(e) {
   if (hasError) e.preventDefault();
 
 });
+
+/*end of form validation*/
