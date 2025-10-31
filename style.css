@@ -195,37 +195,49 @@ a{
 
 /* section of missions*/
 
-.missions {
-  text-align: center;
-  padding: 60px 20px;
-  background: #ffffff;
-  color: #fff;
+.search-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
+.search-filter input,
+.search-filter select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
 
+/* Missions container */
 .missions-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 .mission-card {
-  width: 638px;
-  height: 550px;
+  width: 300px;
   background: #1f2833;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center; 
-  justify-content: space-between;
-  padding: 20px; 
+  padding: 15px; 
+  color: #fff;
 }
 
 .mission-card img {
   width: 100%;         
-  height: 90%;       
+  height: 200px;       
   border-radius: 10px;
   object-fit: cover;
 }
@@ -235,74 +247,11 @@ a{
   padding-top: 10px;
 }
 
+.card-text h3,
 .card-text p {
-  margin: 10px 0 5px;
-  color: #ffffff;
-  font-size: 20px;
+  margin: 5px 0;
 }
 
-
-
-
-/* section of missions*/
-
-
-.carts-planets {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  background-color: #fafafa;
-  flex-wrap: wrap;
-}
-
-.card {
-  min-width: 1159px;
-  height: 609px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #ffffff;
-  padding: 40px;
-  font-family: "Times New Roman", serif;
-}
-
-
-.planet-name {
-  color: rgb(0, 0, 0);
-  margin: 0 0 18px 0;
-  font-size: 56px;
-  font-weight: bold;
-}
-
-.info {
-  margin-bottom: 24px;
-  line-height: 1.6;
-  font-size: 26px;
-}
-
-.item {
-  color: black;
-  display: block;
-  border-bottom: 3px solid rgb(0, 0, 0);
-  width: fit-content;
-  margin-bottom: 8px;
-  padding-bottom: 4px;
-  color: black;
-}
-
-.desc {
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 520px;
-  color: #111;
-}
-
-.right img {
-  width: 510px;
-  height: 521px;
-  border-radius: 18px;
-}
 
 
 /* section contact*/
