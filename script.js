@@ -47,14 +47,17 @@ form.addEventListener('submit', function(e) {
     hasError = true;
   }
 
+  const true_email = /^[\w._]+@[\w._]+\.\w+$/;
+
   if (email === '') {
     errorEmail.textContent = 'Email is required';
     hasError = true;
-  } else if (email === '' || !email.includes('@') || !email.includes('.')) {
+  } else if (email != true_email) {
     errorEmail.textContent = 'Enter a valid email';
     hasError = true;
   }
 
+  
   if (phone === '') {
     errorPhone.textContent = 'Phone number is required';
     hasError = true;
