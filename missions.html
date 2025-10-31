@@ -7,16 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- HEADER -->
     <header>
-      <!-- ======= PARTIE DU HAUT ======= -->
       <div class="top-header">
-        <!-- Logo à gauche -->
         <div class="logo">
           <img src="images/planetes/logo.png" alt="Logo" />
         </div>
 
-        <!-- Partie droite -->
         <div class="top-right">
           <div class="search-bar">
             <input type="text" placeholder="Search..." />
@@ -40,7 +36,6 @@
         </div>
       </div>
 
-      <!-- ======= PARTIE DU BAS ======= -->
       <div class="bottom-header">
         <div class="bottom-left">
           <div class="social-icons">
@@ -85,25 +80,46 @@
     </section>
 
     <section class="missions">
+      <!-- Search & Filters -->
+
+      <div class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search mission..." />
+        <input type="text" id="yearInput" placeholder="Enter Year..." />
+        <select id="agencyFilter">
+          <option value="">All Agencies</option>
+          <option value="nasa">NASA</option>
+          <option value="esa">ESA</option>
+        </select>
+      </div>
+
       <div class="missions-container">
         <div class="mission-card">
           <img src="images/Missions/appolo11.png" alt="Apollo 11" />
           <div class="card-text">
-            <h3>Apollo 11 - NASA - 1969 - First human landing on the Moon.</h3>
+            <h3 class="mission-name">Apollo 11</h3>
+            <p class="mission-agency">NASA</p>
+            <p class="mission-year">1969</p>
+            <p class="mission-desc">First human landing on the Moon.</p>
           </div>
         </div>
 
         <div class="mission-card">
           <img src="images/Missions/voyage1.png" alt="Voyager 1" />
           <div class="card-text">
-            <p>Voyager 1 - NASA - 1977 - Exploring the outer solar system.</p>
+            <h3 class="mission-name">Voyager 1</h3>
+            <p class="mission-agency">NASA</p>
+            <p class="mission-year">1977</p>
+            <p class="mission-desc">Exploring the outer solar system.</p>
           </div>
         </div>
 
         <div class="mission-card">
           <img src="images/Missions/Curiosity.png" alt="Curiosity" />
           <div class="card-text">
-            <h3>Curiosity - NASA - 2011 - Study the surface of Mars.</h3>
+            <h3 class="mission-name">Curiosity</h3>
+            <p class="mission-agency">NASA</p>
+            <p class="mission-year">2011</p>
+            <p class="mission-desc">Study the surface of Mars.</p>
           </div>
         </div>
 
@@ -113,24 +129,30 @@
             alt="James Webb Telescope"
           />
           <div class="card-text">
-            <h3>
-              James Webb Telescope - NASA - 2021 - Observe the origins of the
-              universe
-            </h3>
+            <h3 class="mission-name">James Webb Telescope</h3>
+            <p class="mission-agency">NASA</p>
+            <p class="mission-year">2021</p>
+            <p class="mission-desc">Observe the origins of the universe.</p>
           </div>
         </div>
 
         <div class="mission-card">
           <img src="images/Missions/Rosetta.png" alt="Rosetta" />
           <div class="card-text">
-            <h3>Rosetta - ESA - 2004 - Study comet 67P</h3>
+            <h3 class="mission-name">Rosetta</h3>
+            <p class="mission-agency">ESA</p>
+            <p class="mission-year">2004</p>
+            <p class="mission-desc">Study comet 67P.</p>
           </div>
         </div>
 
         <div class="mission-card">
           <img src="images/Missions/artemis1.png" alt="Artemis I" />
           <div class="card-text">
-            <h3>Artemis I - NASA - 2022 - Return to the Moon</h3>
+            <h3 class="mission-name">Artemis I</h3>
+            <p class="mission-agency">NASA</p>
+            <p class="mission-year">2022</p>
+            <p class="mission-desc">Return to the Moon.</p>
           </div>
         </div>
 
@@ -140,7 +162,10 @@
             alt="Hubble Telescope"
           />
           <div class="card-text">
-            <h3>Hubble Telescope - NASA - 1990 - Observe distant galaxies.</h3>
+            <h3 class="mission-name">Hubble Telescope</h3>
+            <p class="mission-agency">NASA</p>
+            <p class="mission-year">1990</p>
+            <p class="mission-desc">Observe distant galaxies.</p>
           </div>
         </div>
 
@@ -150,7 +175,10 @@
             alt="Cassini-Huygens"
           />
           <div class="card-text">
-            <h3>Cassini-Huygens - NASA - 1997 - Study Saturn and Titan.</h3>
+            <h3 class="mission-name">Cassini-Huygens</h3>
+            <p class="mission-agency">NASA</p>
+            <p class="mission-year">1997</p>
+            <p class="mission-desc">Study Saturn and Titan.</p>
           </div>
         </div>
       </div>
@@ -217,5 +245,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="missions.js"></script>
   </body>
 </html>
