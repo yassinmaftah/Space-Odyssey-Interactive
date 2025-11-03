@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Missions</title>
     <link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />  <body>
     <header>
       <div class="top-header">
         <div class="logo">
@@ -28,7 +26,8 @@
             <option style="background-color: black">Spanish</option>
           </select>
 
-          <button class="btnfavoret" type="button"><i class="material-icons">favorite</i></button>
+
+          <button id="favorites-btn">Favorites</button>
 
           <img src="images/planetes/Avatar.png" alt="avatar" class="notif" />
         </div>
@@ -77,6 +76,15 @@
       </div>
     </section>
 
+    <!-- Favorites panel overlay -->
+<div id="favorites-panel">
+  <div class="panel-content">
+    <h2>Your Favorites</h2>
+    <div id="favorites-container"></div>
+  </div>
+</div>
+
+
 
     <section class="missions">
       <!-- Search & Filters -->
@@ -84,6 +92,7 @@
       <div class="search-filter">
         <input type="text" id="searchInput" placeholder="Search mission..." />
         <input type="text" id="yearInput" placeholder="Enter Year..." />
+        <input type="text" id="subjectInput" placeholder="Enter subject..." />
         <select id="agencyFilter">
           <option value="">All Agencies</option>
           <option value="nasa">NASA</option>
@@ -92,6 +101,36 @@
       </div>
 
       <div class="missions-container"></section>
+
+        <!-- CRUD Popup (Add / Edit Mission) -->
+<div id="mission-popup" class="popup-overlay">
+  <div class="popup-content">
+    <h2 id="popup-title">Add Mission</h2>
+
+    <form id="mission-form">
+      <input type="text" id="mission-name" placeholder="Mission Name" required />
+      <input type="text" id="mission-year" placeholder="Year" required />
+      <input type="text" id="mission-subject" placeholder="Subject" required />
+      <select id="mission-agency">
+        <option value="">Select Agency</option>
+        <option value="nasa">NASA</option>
+        <option value="esa">ESA</option>
+      </select>
+      <input type="text" id="mission-image" accept="Image URL*" placeholder="Enter image URL" />
+
+      <div class="popup-buttons">
+        <button type="submit" id="save-btn">Save</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Add button -->
+<div class="add-btn-container">
+  <button id="add-mission-btn">+ Add Mission</button>
+</div>
+
 
     <footer>
       <div class="background-footer">
