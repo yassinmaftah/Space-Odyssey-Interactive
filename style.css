@@ -326,6 +326,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center; 
+  justify-content: space-between;
   padding: 15px; 
   color: #fff;
 
@@ -356,7 +357,7 @@ a{
 
 
 
-.fav-btn {
+.favoritte_btn {
   background: transparent;
   border: none;
   font-size: 22px;
@@ -365,11 +366,11 @@ a{
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.fav-btn:hover {
+.favoritte_btn:hover {
   transform: scale(1.5);
 }
 
-.fav-btn.active {
+.favoritte_btn.active {
   color: rgb(255, 0, 0);
 }
 
@@ -1372,3 +1373,19 @@ hr {
 .search-bar{
   height: 40px;
 }
+
+#favorites-btn{
+  background-color: rgba(161, 59, 59, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: white solid 1px;
+  border-radius: 10px;
+  width: 25%;
+  height: 35px;
+}
+
+#favorites-btn:hover{
+  scale: 1.1;
+  transition:  0.2s ease-in-out;
+}
+
