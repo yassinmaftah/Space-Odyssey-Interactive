@@ -81,6 +81,7 @@ function displayMissions(list) {
         displayMissions(missions);
         showFavoritesPanel();
       }
+      saveToLocalStorage();
     };
   });
 }
@@ -198,8 +199,7 @@ missionForm.onsubmit = function(e){
     return;
   if (id_select) 
     editMission(data);
-  else 
-    addMission(data);
+  else addMission(data);
   displayMissions(missions);
   popup.style.display = 'none';
   showFavoritesPanel();
