@@ -31,7 +31,7 @@ form.addEventListener('submit', function(e) {
    errorSubject.textContent = '';
    errorMessage.textContent = '';
 
-   const true_name = /^\w{3,}$/; 
+   const true_name = /^[A-Za-z]{3,}$/; 
   if (firstName === '') {
     errorName.textContent = 'First name is required';
     hasError = true;
