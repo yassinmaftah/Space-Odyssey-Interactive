@@ -78,7 +78,7 @@
 
 <div id="favorites-panel">
   <div class="panel-content">
-    <h2>Your Favorites</h2>
+    <h2>Your Favorites cards</h2>
     <div id="favorites-container"></div>
   </div>
 </div>
@@ -96,6 +96,10 @@
           <option value="">All Agencies</option>
           <option value="nasa">NASA</option>
           <option value="esa">ESA</option>
+          <option value="NASA/ESA/CSA">NASA/ESA/CSA</option>
+          <option value="ESA/JAXA">ESA/JAXA</option>
+          <option value="JAXA">JAXA</option>
+          <option value="CNSA">CNSA</option>
         </select>
       </div>
 
@@ -108,12 +112,18 @@
 
     <form id="mission-form">
       <input type="text" id="mission-name" placeholder="Mission Name" required />
+      <div class="input-text-name"></div>
+
       <input type="text" id="mission-year" placeholder="Year" required />
       <input type="text" id="mission-subject" placeholder="Subject" required />
       <select id="mission-agency">
         <option value="">Select Agency</option>
         <option value="nasa">NASA</option>
         <option value="esa">ESA</option>
+        <option value="NASA/ESA/CSA">NASA/ESA/CSA</option>
+        <option value="ESA/JAXA">ESA/JAXA</option>
+        <option value="JAXA">JAXA</option>
+        <option value="CNSA">CNSA</option>
       </select>
       <input type="text" id="mission-image" accept="Image URL*" placeholder="Enter image URL" />
 
