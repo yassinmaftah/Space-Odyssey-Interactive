@@ -194,9 +194,12 @@ function editMission({ name, agency, year, subject, image }) {
 missionForm.onsubmit = function(e){
   e.preventDefault();
   const data = getMissionData();
-  if (!data) return;
-  if (id_select) editMission(data);
-  else addMission(data);
+  if (!data) 
+    return;
+  if (id_select) 
+    editMission(data);
+  else 
+    addMission(data);
   displayMissions(missions);
   popup.style.display = 'none';
   showFavoritesPanel();
