@@ -31,12 +31,12 @@ form.addEventListener('submit', function(e) {
    errorSubject.textContent = '';
    errorMessage.textContent = '';
 
-   const true_name = /^\w{3,}$/; 
+   const true_name = /^[A-Za-z]{3,}$/; 
   if (firstName === '') {
     errorName.textContent = 'First name is required';
     hasError = true;
   }else if (!true_name.test(firstName)) {
-    errorName.textContent = 'The name must be longer than 2 letters.';
+    errorName.textContent = 'The name must be longer than 2 letters And just Letters.';
     hasError = true;
   }
 
@@ -45,7 +45,7 @@ form.addEventListener('submit', function(e) {
     errorLastName.textContent = 'Last Name is required';
     hasError = true;
   }else if (!true_name.test(lastName)) {
-    errorLastName.textContent = 'The Last name must be longer than 2 letters.';
+    errorLastName.textContent = 'The Last name must be longer than 2 letters And just Letters.';
     hasError = true;
   }
 
