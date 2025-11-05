@@ -31,18 +31,20 @@ form.addEventListener('submit', function(e) {
    errorSubject.textContent = '';
    errorMessage.textContent = '';
 
+   const true_name = /^\w{3,}$/; 
   if (firstName === '') {
     errorName.textContent = 'First name is required';
     hasError = true;
-  }else if (firstName.length < 3) {
+  }else if (!true_name.test(firstName)) {
     errorName.textContent = 'The name must be longer than 2 letters.';
     hasError = true;
   }
 
+
   if (lastName === '') {
     errorLastName.textContent = 'Last Name is required';
     hasError = true;
-  }else if (lastName.length < 3) {
+  }else if (!true_name.test(lastName)) {
     errorLastName.textContent = 'The Last name must be longer than 2 letters.';
     hasError = true;
   }
@@ -61,9 +63,11 @@ form.addEventListener('submit', function(e) {
   if (phone === '') {
     errorPhone.textContent = 'Phone number is required';
     hasError = true;
-  } else if (phone.length <= 9  || phone.length > 15) {
-    errorPhone.textContent = 'Phone must be 10-15 digits';
+  } else if (!/^\d{10,15}$/.test(phone)) {
+    errorPhone.textContent = 'Phone must contain 10 to 15 digits only';
     hasError = true;
+  } else {
+    errorPhone.textContent = '';
   }
 
   if (!subject) {
